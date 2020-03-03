@@ -1,0 +1,157 @@
+.section-2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.s2_title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.s2_title::before,
+.s2_title::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  border: 1px solid grey;
+  background: grey;
+  position: absolute;
+  top: 43%;
+}
+
+.s2_title::before {
+  left: 3%;
+}
+
+.s2_title::after {
+  right: 3%;
+}
+
+.s2_description {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  width: 280px;
+}
+
+.s2_list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.item:last-child {
+  display: none;
+}
+
+.item {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.s2_item-img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.item_text {
+  display: flex;
+  flex-flow: column;
+  width: 230px;
+}
+
+.s2_item_title {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .s2_title::before {
+    left: 30%;
+  }
+
+  .s2_title::after {
+    right: 30%;
+  }
+
+  .s2_description {
+    width: 700px;
+  }
+
+  .s2_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 700px;
+  }
+
+  .item {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .item:last-child {
+    display: block;
+  }
+
+  .s2_item-img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+  }
+
+  .s2_title::before {
+    left: -33%;
+  }
+
+  .s2_title::after {
+    right: -33%;
+  }
+
+  .s2_description {
+    width: 900px;
+  }
+
+  .s2_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 1100px;
+  }
+
+  .item {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .s2_item-img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+  }
+
+}

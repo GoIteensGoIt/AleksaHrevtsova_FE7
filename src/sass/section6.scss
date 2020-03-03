@@ -1,0 +1,161 @@
+.s6_wrapper {
+  background: url('../images/footerfon.jpg');
+  background-position: right;
+  background-size: cover;
+}
+
+.section6 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 150px 0;
+  align-items: center;
+  color: rgb(245, 249, 252);
+}
+
+.s6_title,
+.s6_underform_titlet,
+.s6_underform_text,
+.s6_span {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  // color: black;
+}
+
+.s6_span {
+  margin-top: 50px;
+}
+
+.s6_underform_text {
+  width: 280px;
+}
+
+.s6_form {
+  display: flex;
+  flex-flow: column;
+  width: 280px;
+  // justify-content: center;
+  margin: 0 auto;
+}
+
+.s6_form input {
+  margin-bottom: 25px;
+}
+
+.s6_btn {
+  display: block;
+  margin: 25px auto;
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20%;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.s6_icons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 280px;
+  margin-top: 50px;
+}
+
+.s6_icons a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  // background: pink;
+  position: relative;
+}
+
+.s6_icons a svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  color: red;
+}
+
+@media (min-width: 768px) {
+  .section6 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+
+  .s6_block1,
+  .s6_block2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    vertical-align: top;
+  }
+
+  .s6_form {
+    flex-flow: row wrap;
+    width: 410px;
+    justify-content: space-between;
+  }
+
+  .s6_form input {
+    width: 200px;
+  }
+
+  .s6_form textarea {
+    width: 410px;
+  }
+
+  .s6_underform_text {
+    display: block;
+    // width: 500px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .section6 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .s6_form {
+    flex-flow: column;
+    justify-content: space-between;
+
+  }
+
+  .s6_form input {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .s6_form textarea {
+    width: 350px;
+    height: 150px;
+    margin-bottom: 25px;
+  }
+
+  .s6_btn {
+    margin: 0 auto;
+  }
+
+  .s6_underform_text {
+    color: black;
+    display: block;
+    // width: 700px;
+  }
+
+}
